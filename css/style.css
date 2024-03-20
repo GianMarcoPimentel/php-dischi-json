@@ -1,0 +1,40 @@
+body{
+    background-color: #1D2D3C;
+}
+.header{
+    height: 120px;
+    background-color: #06131F;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 80px;
+    height: 80px;
+    
+}
+.logo img{
+    width: 100%;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 40px;
+}
+li{
+    width: calc(100% / 3 - (40px / 3 * 2));
+    height: 500px;
+
+    padding: 60px;
+    background-color: #112030;
+    color: #FEFCF4;
+    border-radius: 20px;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 20px;
+}

@@ -15,29 +15,38 @@
     <!-- axios -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
         
     <div id="app">
-
+    <div class="header">
         <div class="container">
-        
-
-        <h1>Dischi :</h1>
-        
-        <ul>
-            <li
-            v-for=" dischi in dischiList "
-            >
-            <img :src="dischi['poster']" alt="">
-            <h1>{{ dischi['title'] }}</h1>
-            <p>{{ dischi['author'] }}</p>
-            <h3>{{ dischi['year'] }}</h3>
-            </li>
-        </ul>
-
-
+            <div class="logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png" alt="">
+            </div>
+            
         </div>
+    </div>
+      
+        
+        <div class="container p-5">
+
+            <ul>
+                <li
+                v-for=" dischi in dischiList "
+                >
+                <img :src="dischi['poster']" alt="">
+                <span>{{ dischi['title'] }}</span>
+                <span>{{ dischi['author'] }}</span>
+                <span>{{ dischi['year'] }}</span>
+                </li>
+            </ul>
+        </div>
+
+
+       
     </div>
 
 
