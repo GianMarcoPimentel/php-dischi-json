@@ -1,4 +1,4 @@
-const { createApp } = vue;
+const { createApp } = Vue;
 
 createApp({
     data() {
@@ -7,7 +7,8 @@ createApp({
         }
     }, mounted() {
         axios.get('./server.php').then( res => {
-            console.log(res);
+            console.log(res.data);
+            this.dischiList = res.data;
         })
     }
 }).mount('#app');
