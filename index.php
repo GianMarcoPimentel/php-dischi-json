@@ -38,9 +38,9 @@
                 v-for=" dischi in dischiList "
                 >
                 <img :src="dischi['poster']" alt="">
-                <span>{{ dischi['title'] }}</span>
-                <span>{{ dischi['author'] }}</span>
-                <span>{{ dischi['year'] }}</span>
+                <span class=" title ">{{ dischi['title'] }}</span>
+                <span class=" author ">{{ dischi['author'] }}</span>
+                <span class=" year ">{{ dischi['year'] }}</span>
                 </li>
             </ul>
         </div>

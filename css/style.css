@@ -38,3 +38,23 @@ li{
     align-items: center;
     gap: 20px;
 }
+li img{
+    width: 100%;
+
+    object-fit: cover;
+}
+li .title{
+    font-size: 25px;
+    text-align: center;
+    font-weight:bold ;
+}
+
+li .author{
+    font-size: 16px ;
+    opacity: 0.5;
+}
+
+li .year{
+    font-size: 20px ;
+    font-weight: bold;
+}
