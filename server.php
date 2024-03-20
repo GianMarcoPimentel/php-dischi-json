@@ -1,5 +1,5 @@
 <?php
-$dischi =   [
+/* $dischi =   [
                 [
                     "title" => "New Jersey",
                     "author" => "Bon Jovi",
@@ -43,8 +43,16 @@ $dischi =   [
                     "genre" => "Rock"
                 ]
             ];
-                
+                 */
 // trasfromo l'array in un elemento json
+
+// la lista dei dischi viene letta da un file esterno (disc-list-json)
+$discPage = file_get_contents("./disc-list.json");
+//var_dump($discPage);
+//header("");
+$dischiList = json_decode( $discPage );
+//var_dump($dischiList);
+
 // in qualcosa che posso inviare al nostro main.js
 // che possiamo leggere con axios (che legge dei file json)
 // json_encode( $dischi );
@@ -52,4 +60,4 @@ $dischi =   [
 // dobbiamo anche dire che server.php quando il server lo renderizza 
 // indichi che siano informazione json
 header("Content-Type: application/json");
-echo json_encode( $dischi );
+echo json_encode( $dischiList );
