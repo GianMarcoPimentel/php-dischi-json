@@ -5,7 +5,9 @@ createApp({
         return {
             dischiList : [],
         }
-    }, mounted() {
+    }, 
+    mounted() {
+        console.log(axios);
         axios.get('./server.php').then( res => {
             console.log(res.data);
             this.dischiList = res.data;

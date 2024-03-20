@@ -49,4 +49,7 @@ $dischi =   [
 // che possiamo leggere con axios (che legge dei file json)
 // json_encode( $dischi );
 
+// dobbiamo anche dire che server.php quando il server lo renderizza 
+// indichi che siano informazione json
+header("Content-Type: application/json");
 echo json_encode( $dischi );

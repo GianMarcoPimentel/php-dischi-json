@@ -23,7 +23,18 @@
         <div class="container">
         
 
-       {{ dischiList }}     
+        <h1>Dischi :</h1>
+        
+        <ul>
+            <li
+            v-for=" dischi in dischiList "
+            >
+            <img :src="dischi['poster']" alt="">
+            <h1>{{ dischi['title'] }}</h1>
+            <p>{{ dischi['author'] }}</p>
+            <h3>{{ dischi['year'] }}</h3>
+            </li>
+        </ul>
 
 
         </div>
