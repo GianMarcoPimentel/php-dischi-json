@@ -4,8 +4,14 @@ createApp({
     data() {
         return {
             dischiList : [],
+            diskIndex : '',
         }
     }, 
+    methods: {
+        viewDischi(){
+            console.log("apripagina");
+        }
+    },
     mounted() {
         console.log(axios);
         axios.get('./server.php').then( res => {

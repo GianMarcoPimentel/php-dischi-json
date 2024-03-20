@@ -36,6 +36,7 @@
             <ul>
                 <li
                 v-for=" dischi in dischiList "
+                @click="viewDischi()"
                 >
                 <img :src="dischi['poster']" alt="">
                 <span class=" title ">{{ dischi['title'] }}</span>
