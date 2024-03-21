@@ -1,10 +1,10 @@
 [
     {
-        "title": "New Jersey",
-        "author": "Bon Jovi",
-        "year": 1988,
-        "poster": "https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg",
-        "genre": "Rock"
+        "title": "No Woman No Cry",
+        "author": "Bob Marley",
+        "year": 1974,
+        "poster": "https://m.media-amazon.com/images/I/61JOhxpCwSL._UF1000,1000_QL80_.jpg",
+        "genre": "Reggae"
     },
     {
         "title": "Live at Wembley 86",
@@ -14,18 +14,18 @@
         "genre": "Pop"
     },
     {
-        "title": "Ten\"s Summoner\"s Tales",
-        "author": "Sting",
-        "year": 1993,
-        "poster": "https://images-na.ssl-images-amazon.com/images/I/411BQR6BHRL.jpg",
-        "genre": "Pop"
+        "title": "The Score",
+        "author": "Fugees",
+        "year": 1996,
+        "poster": "https://i.discogs.com/FFAcY32DFTkFHsJbjYDW5w-NnqdgjPLkYLVLHeYGk4Y/rs:fit/g:sm/q:90/h:600/w:589/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ0MzM3/OTktMTM2NDc1ODY5/NS03NjM3LmpwZWc.jpeg",
+        "genre": "Hip-Pop"
     },
     {
-        "title": "Steve Gadd band",
-        "author": "Steve Gadd Band",
-        "year": 2018,
-        "poster": "https://m.media-amazon.com/images/I/81UtLzBDoEL._SS500_.jpg",
-        "genre": "Jazz"
+        "title": "Franck",
+        "author": "Amy Winehouse",
+        "year": 2003,
+        "poster": "https://images-eu.ssl-images-amazon.com/images/I/71Y55FU5VGL._AC_UL600_SR600,600_.jpg",
+        "genre": "OndaRock"
     },
     {
         "title": "Brave new World",
@@ -35,10 +35,10 @@
         "genre": "Metal"
     },
     {
-        "title": "One more car, one more rider",
-        "author": "Eric Clapton",
-        "year": 2002,
-        "poster": "https://images-na.ssl-images-amazon.com/images/I/81MDAIdh78L._SY355_.jpg",
+        "title": "Mio fratello è filgio unico",
+        "author": "Rino Gaetano",
+        "year": 1976,
+        "poster": "https://t2.genius.com/unsafe/504x504/https%3A%2F%2Fimages.genius.com%2F056319c879d0fae0d21ec78141d1bdcc.1000x1000x1.jpg",
         "genre": "Rock"
     }
 ]

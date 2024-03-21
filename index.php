@@ -21,7 +21,7 @@
 <body>
         
     <div id="app">
-    <div class="header">
+        <div class="header">
         <div class="container">
             <div class="logo">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png" alt="">
@@ -31,23 +31,34 @@
     </div>
       
         
-        <div class="container p-5">
-
+    <div class="container p-5">
             <ul>
                 <li
-                v-for=" dischi in dischiList "
-                @click="viewDischi()"
+                v-for=" (dischi, index) in dischiList "
+                @click="viewAlbum(index)"
                 >
                 <img :src="dischi['poster']" alt="">
-                <span class=" title ">{{ dischi['title'] }}</span>
-                <span class=" author ">{{ dischi['author'] }}</span>
-                <span class=" year ">{{ dischi['year'] }}</span>
+                <span class="title">{{ dischi['title'] }}</span>
+                <span class="author">{{ dischi['author'] }}</span>
+                <span class="year">{{ dischi['year'] }}</span>
                 </li>
             </ul>
-        </div>
+    </div>
+<!--     v-if si visualizza soltanto se selectedAlbum è diverso da undefined, quindi è definito
+ --><div id="album-details" v-if=" selectedAlbum.title != undefined" >
 
+    <div class="album">
+        <img :src="selectedAlbum.poster" alt="">
+        <span class="title">{{selectedAlbum.title }}</span>
+        <span class="author">{{selectedAlbum.author }}</span>
+        <span class="year">{{selectedAlbum.year }}</span>
+        
+    </div>
+   <button id="close-button">
+        X 
+   </button>
+    </div>
 
-       
     </div>
 
 
