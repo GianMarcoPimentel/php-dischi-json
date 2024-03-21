@@ -54,7 +54,9 @@
         <span class="year">{{selectedAlbum.year }}</span>
         
     </div>
-   <button id="close-button">
+    // per tonrare indietro mi serve solo dire che il mio oggetto è vuoto
+   <button id="close-button"
+   @click="selectedAlbum = {}">
         X 
    </button>
     </div>
